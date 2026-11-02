@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4240" height="1010" viewBox="0 0 4240 1010">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#546A78"/></marker><marker id="aiarr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L6,3 L0,6 Z" fill="#8050A0"/></marker></defs>
+<rect width="4240" height="1010" fill="#FFFFFF"/>
+<text x="55" y="47" fill="#193348" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="bold">SnackCheck — Arquitectura del flujo de trabajo</text>
+<text x="55" y="80" fill="#5A7181" font-family="DejaVu Sans, sans-serif" font-size="18">Diagrama de entrega • n8n + Open Food Facts + Groq • Decisiones, errores y salidas explícitas</text>
+<rect x="40" y="115" width="810" height="848" rx="16" fill="#EAF4F9" fill-opacity="0.68" stroke="#CBD5DE" stroke-width="1.8" stroke-dasharray="9,7"/>
+<text x="62" y="155" fill="#475D6D" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">01  ENTRADA Y VALIDACIÓN</text>
+<rect x="855" y="115" width="1040" height="848" rx="16" fill="#EFF8F8" fill-opacity="0.68" stroke="#CBD5DE" stroke-width="1.8" stroke-dasharray="9,7"/>
+<text x="877" y="155" fill="#475D6D" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">02  DATOS Y API</text>
+<rect x="1900" y="115" width="975" height="848" rx="16" fill="#F4F6F7" fill-opacity="0.68" stroke="#CBD5DE" stroke-width="1.8" stroke-dasharray="9,7"/>
+<text x="1922" y="155" fill="#475D6D" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">03  LÓGICA NUTRICIONAL</text>
+<rect x="2890" y="115" width="830" height="848" rx="16" fill="#F7F2FB" fill-opacity="0.68" stroke="#CBD5DE" stroke-width="1.8" stroke-dasharray="9,7"/>
+<text x="2912" y="155" fill="#475D6D" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">04  INTELIGENCIA ARTIFICIAL</text>
+<rect x="3735" y="115" width="500" height="848" rx="16" fill="#FDF4F0" fill-opacity="0.68" stroke="#CBD5DE" stroke-width="1.8" stroke-dasharray="9,7"/>
+<text x="3757" y="155" fill="#475D6D" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">05  RESPUESTA</text>
+<polyline points="295.0,420.0 335.0,419.5" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="550.0,419.5 605.0,419.5" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="442.5,482.0 457.5,650.0" fill="none" stroke="#BA5C5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="820.0,419.5 870.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="712.5,482.0 725.5,650.0" fill="none" stroke="#BA5C5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1085.0,420.0 1125.0,419.5" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1340.0,419.5 1390.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1232.5,482.0 1247.5,650.0" fill="none" stroke="#BA5C5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1605.0,420.0 1650.0,419.5" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1865.0,419.5 1910.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="1757.5,482.0 1764.5,650.0" fill="none" stroke="#BA5C5C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="2125.0,420.0 2157.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="2372.0,420.0 2404.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="2619.0,420.0 2651.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="2866.0,420.0 2899.0,419.5" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="3006.5,357.0 3006.5,248.0 3157.0,248.0 3192.0,238.0" fill="none" stroke="#8D6FAE" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aiarr)"/>
+<polyline points="3006.5,482.0 3006.5,695.0 3157.0,695.0 3192.0,682.0" fill="none" stroke="#8D6FAE" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aiarr)"/>
+<polyline points="3407.0,238.0 3555.0,238.0 3555.0,350.0 3575.5,370.0" fill="none" stroke="#8D6FAE" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aiarr)"/>
+<polyline points="3407.0,682.0 3555.0,682.0 3555.0,500.0 3575.5,470.0" fill="none" stroke="#8D6FAE" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#aiarr)"/>
+<polyline points="3299.5,323.0 3299.5,288.0" fill="none" stroke="#8D6FAE" stroke-dasharray="7,5" stroke-width="2.3" marker-end="url(#aiarr)"/>
+<polyline points="3299.5,778.0 3299.5,732.0" fill="none" stroke="#8D6FAE" stroke-dasharray="7,5" stroke-width="2.3" marker-end="url(#aiarr)"/>
+<polyline points="3683.0,420.0 3727.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<polyline points="3942.0,420.0 3986.0,420.0" fill="none" stroke="#546A78" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+<rect x="80" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="187.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Webhook</text>
+<text x="187.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Receive Barcode</text>
+<text x="187.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">POST /nutrition-check</text>
+<polygon points="442.5,357.0 550.0,419.5 442.5,482.0 335.0,419.5" fill="#E3F1FA" stroke="#1B7593" stroke-width="2.8"/>
+<text x="442.5" y="402.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">Validate</text>
+<text x="442.5" y="424.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">Body Present</text>
+<text x="442.5" y="446.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">¿Hay datos?</text>
+<rect x="350" y="650" width="215" height="100" rx="13" fill="#FDE8E7" stroke="#BD4E4A" stroke-width="2.4"/>
+<text x="457.5" y="683.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Respond</text>
+<text x="457.5" y="705.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Usage Docs</text>
+<text x="457.5" y="727.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">HTTP 200 · JSON</text>
+<polygon points="712.5,357.0 820.0,419.5 712.5,482.0 605.0,419.5" fill="#E3F1FA" stroke="#1B7593" stroke-width="2.8"/>
+<text x="712.5" y="402.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">Validate</text>
+<text x="712.5" y="424.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">Barcode Numeric</text>
+<text x="712.5" y="446.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">1–14 dígitos</text>
+<rect x="618" y="650" width="215" height="100" rx="13" fill="#FDE8E7" stroke="#BD4E4A" stroke-width="2.4"/>
+<text x="725.5" y="683.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Respond</text>
+<text x="725.5" y="705.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Validation Error</text>
+<text x="725.5" y="727.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">HTTP 400 · JSON</text>
+<rect x="870" y="370" width="215" height="100" rx="13" fill="#DDF4F6" stroke="#257C8C" stroke-width="2.4"/>
+<text x="977.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">API Call</text>
+<text x="977.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Open Food Facts Product</text>
+<text x="977.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">GET · Producto</text>
+<polygon points="1232.5,357.0 1340.0,419.5 1232.5,482.0 1125.0,419.5" fill="#E3F1FA" stroke="#1B7593" stroke-width="2.8"/>
+<text x="1232.5" y="402.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">Check</text>
+<text x="1232.5" y="424.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">Product Found</text>
+<text x="1232.5" y="446.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">status = 1</text>
+<rect x="1140" y="650" width="215" height="100" rx="13" fill="#FDE8E7" stroke="#BD4E4A" stroke-width="2.4"/>
+<text x="1247.5" y="683.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Respond</text>
+<text x="1247.5" y="705.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Product Not Found</text>
+<text x="1247.5" y="727.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">HTTP 404 · JSON</text>
+<rect x="1390" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="1497.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Set</text>
+<text x="1497.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Extract Product Fields</text>
+<text x="1497.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Nombre, marca, nutrientes</text>
+<polygon points="1757.5,357.0 1865.0,419.5 1757.5,482.0 1650.0,419.5" fill="#E3F1FA" stroke="#1B7593" stroke-width="2.8"/>
+<text x="1757.5" y="402.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">Check</text>
+<text x="1757.5" y="424.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">Nutrient Data</text>
+<text x="1757.5" y="446.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">3 números finitos</text>
+<rect x="1657" y="650" width="215" height="100" rx="13" fill="#FDE8E7" stroke="#BD4E4A" stroke-width="2.4"/>
+<text x="1764.5" y="683.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Respond</text>
+<text x="1764.5" y="705.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Insufficient Data</text>
+<text x="1764.5" y="727.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">HTTP 200 · JSON</text>
+<rect x="1910" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="2017.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Set</text>
+<text x="2017.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Classify Traffic Lights</text>
+<text x="2017.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Azúcar · Sal · Grasa</text>
+<rect x="2157" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="2264.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Code</text>
+<text x="2264.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Calculate Concern Score</text>
+<text x="2264.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">0–3 altos</text>
+<rect x="2404" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="2511.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Set</text>
+<text x="2511.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Calculate Readings</text>
+<text x="2511.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Semáforo + Nutri-Score</text>
+<rect x="2651" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="2758.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Set</text>
+<text x="2758.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Decide Verdict Level</text>
+<text x="2758.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Gana la peor lectura</text>
+<polygon points="3006.5,357.0 3114.0,419.5 3006.5,482.0 2899.0,419.5" fill="#E3F1FA" stroke="#1B7593" stroke-width="2.8"/>
+<text x="3006.5" y="402.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">Route</text>
+<text x="3006.5" y="424.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">Verdict Tone</text>
+<text x="3006.5" y="446.5" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal">¿No saludable?</text>
+<rect x="3192" y="188" width="215" height="100" rx="13" fill="#EFE6FB" stroke="#8050A0" stroke-width="2.4"/>
+<text x="3299.5" y="221.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">AI</text>
+<text x="3299.5" y="243.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Health Verdict (Cautionary)</text>
+<text x="3299.5" y="265.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Texto cauteloso</text>
+<rect x="3192" y="632" width="215" height="100" rx="13" fill="#EFE6FB" stroke="#8050A0" stroke-width="2.4"/>
+<text x="3299.5" y="665.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">AI</text>
+<text x="3299.5" y="687.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Health Verdict (Encouraging)</text>
+<text x="3299.5" y="709.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Texto alentador</text>
+<rect x="3192" y="323" width="215" height="100" rx="13" fill="#F5EFFC" stroke="#8D77AD" stroke-width="2.4"/>
+<text x="3299.5" y="356.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Groq Chat Model</text>
+<text x="3299.5" y="378.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">gpt-oss-20b</text>
+<text x="3299.5" y="400.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Rama cautelosa</text>
+<rect x="3192" y="778" width="215" height="100" rx="13" fill="#F5EFFC" stroke="#8D77AD" stroke-width="2.4"/>
+<text x="3299.5" y="811.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Groq Chat Model</text>
+<text x="3299.5" y="833.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">gpt-oss-20b</text>
+<text x="3299.5" y="855.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Rama alentadora</text>
+<rect x="3468" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="3575.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Merge</text>
+<text x="3575.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Combine AI Branches</text>
+<text x="3575.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Append</text>
+<rect x="3727" y="370" width="215" height="100" rx="13" fill="#EAF1F6" stroke="#526E83" stroke-width="2.4"/>
+<text x="3834.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Set</text>
+<text x="3834.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Format Verdict Message</text>
+<text x="3834.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Informe + texto IA</text>
+<rect x="3986" y="370" width="215" height="100" rx="13" fill="#FDE8E7" stroke="#BD4E4A" stroke-width="2.4"/>
+<text x="4093.5" y="403.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="bold">Respond</text>
+<text x="4093.5" y="425.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Health Verdict</text>
+<text x="4093.5" y="447.0" fill="#22384B" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">HTTP 200 · UTF-8</text>
+<rect x="473" y="371" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="480" y="390" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">SÍ</text>
+<rect x="438" y="607" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="445" y="626" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">NO</text>
+<rect x="743" y="371" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="750" y="390" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">SÍ</text>
+<rect x="706" y="605" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="713" y="624" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">NO</text>
+<rect x="1263" y="370" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="1270" y="389" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">SÍ</text>
+<rect x="1197" y="606" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="1204" y="625" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">NO</text>
+<rect x="1788" y="370" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="1795" y="389" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">SÍ</text>
+<rect x="1755" y="609" width="41" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="1762" y="628" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">NO</text>
+<rect x="2993" y="261" width="161" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="3000" y="280" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">NO SALUDABLE</text>
+<rect x="2973" y="623" width="257" height="26" rx="5" fill="#FFFFFF" fill-opacity=".95"/>
+<text x="2980" y="642" fill="#334B60" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold">SALUDABLE / MODERADO</text>
+<text x="55" y="992" fill="#688096" font-family="DejaVu Sans, sans-serif" font-size="15">Salida de validación / datos insuficientes: respuesta JSON  •  Veredicto: texto UTF-8  •  Conexiones punteadas: modelos de Groq</text>
+</svg>
