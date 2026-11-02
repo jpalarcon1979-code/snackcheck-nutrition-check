@@ -7,10 +7,10 @@
 |---|---|---|---|---|
 | TC-001 | Nutella `3017620422003` | Postman, extremo a extremo | Informe completo; NO SALUDABLE, score 2/3, Nutri-Score no disponible | Aprobado funcionalmente |
 | TC-002 | Coca-Cola `5449000000996` | Postman, extremo a extremo | Informe completo; NO SALUDABLE, Nutri-Score E, score 0/3, azúcar amarilla tras corrección | Aprobado funcionalmente |
-| TC-003 | Body vacío `{}` | Postman, producción, 2026-11-02 | JSON de instrucciones de uso, **HTTP 200** confirmado | **Aprobado** — `evidencias/TC-003_body_vacio_HTTP200.png` |
-| TC-004 | Código `abc123` | Postman, producción, 2026-11-02 | `invalid_barcode`, **HTTP 400** confirmado | **Aprobado** — `evidencias/TC-004_codigo_invalido_HTTP400.png` |
-| TC-005 | `98765432109876` | Postman, producción, 2026-11-02 | `product_not_found`, **HTTP 404** confirmado nuevamente | **Aprobado** — `evidencias/TC-005_producto_no_encontrado_HTTP404.png` |
-| TC-006 | Sin `barcode` (`{"codigo":"123"}`) | Postman, producción, 2026-11-02 | `invalid_barcode`, **HTTP 400** confirmado | **Aprobado** — `evidencias/TC-006_campo_ausente_HTTP400.png` |
+| TC-003 | Body vacío `{}` | Postman, producción, 2026-11-02 | JSON de instrucciones de uso, **HTTP 200** confirmado | **Aprobado** — `EVIDENCIAS_SnackCheck.pdf`, página 2 |
+| TC-004 | Código `abc123` | Postman, producción, 2026-11-02 | `invalid_barcode`, **HTTP 400** confirmado | **Aprobado** — `EVIDENCIAS_SnackCheck.pdf`, página 3 |
+| TC-005 | `98765432109876` | Postman, producción, 2026-11-02 | `product_not_found`, **HTTP 404** confirmado nuevamente | **Aprobado** — `EVIDENCIAS_SnackCheck.pdf`, página 5 |
+| TC-006 | Sin `barcode` (`{"codigo":"123"}`) | Postman, producción, 2026-11-02 | `invalid_barcode`, **HTTP 400** confirmado | **Aprobado** — `EVIDENCIAS_SnackCheck.pdf`, página 4 |
 | TC-007 | Código >14 dígitos | Postman | Se reportó `invalid_barcode`; valor de entrada no quedó registrado en el chat | Validación parcial; conservar evidencia de entrada |
 | TC-008 | Nutrientes `null` | Datos simulados/Pin Data en n8n | `Check - Nutrient Data` tomó rama `false`, nodo de respuesta configurado `insufficient_data` | Prueba interna aprobada; no E2E HTTP |
 | TC-009 | Nutri-Score A | Datos simulados/Pin Data en n8n | `concernScore=0`, `nutriReading=saludable`, `verdictLevel=saludable` | Prueba interna aprobada; no E2E HTTP |
@@ -19,8 +19,8 @@
 
 | PERF-001 | Cinco ejecuciones consecutivas, Nutella | n8n Executions, 2026-11-02 | 3.167 s; 1.219 s; 1.504 s; 1.515 s; 2.446 s; **promedio 1.9702 s**, mínimo 1.219 s, máximo 3.167 s; las cinco exitosas | Aprobado en entorno de pruebas; desglose API/IA no disponible |
 | PROD-001 | Nutella mediante URL de producción | Postman hacia endpoint `/webhook/nutrition-check`, sin ejecutar manualmente el canvas | Informe completo NO SALUDABLE, preocupación 2/3, cifras coherentes; respuesta recibida | Aprobado funcionalmente; HTTP 200 pendiente de confirmación explícita |
-| TC-010 | Nutri-Score A real, `8410505192216` | Postman, producción, 2026-11-02 | **HTTP 200**, SALUDABLE, Nutri-Score A, preocupación 0/3; Luengo, nombre de producto no disponible | **Aprobado** — `evidencias/TC-010_nutriscore_A_HTTP200.png` |
-| PROD-002 | Ejecución n8n de TC-010 | n8n Executions, 2026-11-02 17:35:33 | Estado `Succeeded`, duración **3.131 s** | **Confirmado** — `evidencias/PROD-002_ejecucion_n8n_exitosa.png` |
+| TC-010 | Nutri-Score A real, `8410505192216` | Postman, producción, 2026-11-02 | **HTTP 200**, SALUDABLE, Nutri-Score A, preocupación 0/3; Luengo, nombre de producto no disponible | **Aprobado** — `EVIDENCIAS_SnackCheck.pdf`, página 6 |
+| PROD-002 | Ejecución n8n de TC-010 | n8n Executions, 2026-11-02 17:35:33 | Estado `Succeeded`, duración **3.131 s** | **Confirmado** — `EVIDENCIAS_SnackCheck.pdf`, página 7 |
 
 ## Evidencias recomendadas para la entrega
 
@@ -49,15 +49,18 @@ Guardar capturas de: un ejemplo de cada rama, códigos 400 y 404 en Postman, res
 - `pinData` vacío; `Respond - Product Not Found` tiene HTTP 404; ambos Groq usan `openai/gpt-oss-20b`.
 - Se verificó `POST` y la respuesta Nutella desde la URL de producción (cuerpo correcto). La captura del código HTTP de producción no se proporcionó aquí.
 - Las cinco ejecuciones exitosas incluyen el tiempo total; la vista mostrada no dio desglose API/IA.
-## Capturas recibidas en la auditoría del 2026-11-02
 
-| Archivo de evidencia | Observación verificable |
-| --- | --- |
-| `evidencias/TC-003_body_vacio_HTTP200.png` | Cuerpo vacío / autodocumentación HTTP 200 |
-| `evidencias/TC-004_codigo_invalido_HTTP400.png` | Código con letras HTTP 400 |
-| `evidencias/TC-006_campo_ausente_HTTP400.png` | Campo barcode ausente HTTP 400 |
-| `evidencias/TC-005_producto_no_encontrado_HTTP404.png` | Código desconocido HTTP 404 |
-| `evidencias/TC-010_nutriscore_A_HTTP200.png` | Producto Luengo Nutri-Score A HTTP 200 |
-| `evidencias/PROD-002_ejecucion_n8n_exitosa.png` | Ejecución n8n con éxito |
+## Evidencia visual consolidada (02-11-2026)
 
-**Nota de límites:** TC-008 (sin nutrientes) solo tiene prueba interna con Pin Data, no prueba real por HTTP. No debe declararse validado de extremo a extremo. TC-007 carece aún de captura identificable. El HTTP 200 de Nutella en PROD-001 sigue pendiente de evidencia explícita, aunque se obtuvo una respuesta válida.
+Las seis capturas verificables de Postman y n8n se encuentran reunidas en [`EVIDENCIAS_SnackCheck.pdf`](EVIDENCIAS_SnackCheck.pdf), para facilitar su consulta y entrega en GitHub.
+
+| Caso | Página | Evidencia |
+|---|---:|---|
+| TC-003 | 2 | Autodocumentación: HTTP 200 |
+| TC-004 | 3 | Código inválido: HTTP 400 |
+| TC-006 | 4 | Falta barcode: HTTP 400 |
+| TC-005 | 5 | Producto no encontrado: HTTP 404 |
+| TC-010 | 6 | Luengo, Nutri-Score A y veredicto saludable: HTTP 200 |
+| PROD-002 | 7 | n8n: ejecución exitosa (3.131 s) |
+
+**Límites:** TC-008 (sin nutrientes) fue probado con datos simulados, no mediante HTTP real. TC-007 no tiene captura de la entrada exacta; PROD-001 no cuenta con confirmación visual explícita de código HTTP 200. No se declara validación completa de esos casos.
